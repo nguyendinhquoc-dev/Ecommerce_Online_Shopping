@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-sm-4 col-sm-offset-1">
                 <div class="login-form"><!--login form-->
-                    <h2>Login to your account</h2>
+                    <h2>Đăng nhập</h2>
                     <form action="{{url('/user_login')}}" method="post" class="form-horizontal">
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
                         <input type="email" placeholder="Email" name="email"/>
@@ -30,7 +30,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="signup-form"><!--sign up form-->
-                    <h2>New User Signup!</h2>
+                    <h2>Tạo tài khoản</h2>
                     <form action="{{url('/register_user')}}" method="post" class="form-horizontal">
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
 

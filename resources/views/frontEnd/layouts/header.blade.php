@@ -35,23 +35,23 @@
                     <div class="btn-group pull-right">
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                                USA
+                                Vietnam
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Canada</a></li>
-                                <li><a href="#">UK</a></li>
+                                <li><a href="#">Viet Nam</a></li>
+                                <li><a href="#">Korea</a></li>
                             </ul>
                         </div>
 
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                                DOLLAR
+                                VND
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Canadian Dollar</a></li>
-                                <li><a href="#">Pound</a></li>
+                                <li><a href="#">VND</a></li>
+                                <li><a href="#">Won</a></li>
                             </ul>
                         </div>
                     </div>
@@ -59,13 +59,13 @@
                 <div class="col-sm-8">
                     <div class="shop-menu pull-right">
                         <ul class="nav navbar-nav">
-                            <li><a href="{{url('/viewcart')}}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+                            <li><a href="{{url('/viewcart')}}"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
                             @if(Auth::check())
-                                <li><a href="{{url('/myaccount')}}"><i class="fa fa-user"></i> My Account</a></li>
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-lock"></i> Logout </a>
+                                <li><a href="{{url('/myaccount')}}"><i class="fa fa-user"></i> Tài khoản của tôi</a></li>
+                                <li><a href="{{ url('/logout') }}"><i class="fa fa-lock"></i> Đăng xuất </a>
                                 </li>
                             @else
-                                <li><a href="{{url('/login_page')}}"><i class="fa fa-lock"></i> Login</a></li>
+                                <li><a href="{{url('/login_page')}}"><i class="fa fa-lock"></i> Đăng nhập</a></li>
                             @endif
                         </ul>
                     </div>
@@ -88,21 +88,21 @@
                     </div>
                     <div class="mainmenu pull-left">
                         <ul class="nav navbar-nav collapse navbar-collapse">
-                            <li><a href="{{url('/')}}" class="active">Home</a></li>
-                            <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
+                            <li><a href="{{url('/')}}" class="active">Trang chủ</a></li>
+                            <li class="dropdown"><a href="#">Cửa hàng<i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">
-                                    <li><a href="{{url('/list-products')}}">Products</a></li>
-                                    <li><a href="{{url('/myaccount')}}">Account</a></li>
-                                    <li><a href="{{url('/viewcart')}}">Cart</a></li>
+                                    <li><a href="{{url('/list-products')}}">Sản phẩm</a></li>
+                                    <li><a href="{{url('/myaccount')}}">Tài khoản</a></li>
+                                    <li><a href="{{url('/viewcart')}}">Giỏ hàng</a></li>
                                 </ul>
                             </li>
-                            <li><a href="https://trello.com/fateam76" target="_blank">Contact</a></li>
+                            <li><a href="https://trello.com/fateam76" target="_blank">Liên hệ</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="search_box pull-right">
-                        <input type="text" placeholder="Search"/>
+                        <input type="text" placeholder="Tìm kiếm"/>
                     </div>
                 </div>
             </div>

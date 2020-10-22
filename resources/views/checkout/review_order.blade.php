@@ -5,7 +5,7 @@
 @section('content')
     <div class="container">
         <div class="step-one">
-            <h2 class="heading">Shipping To</h2>
+            <h2 class="heading">Vận chuyển tới</h2>
         </div>
         <div class="row">
             <form action="{{url('/submit-order')}}" method="post" class="form-horizontal">
@@ -137,7 +137,7 @@
                             <span>
                             <label><input type="radio" name="payment_method" value="Paypal"> Paypal</label>
                         </span>
-                            <button type="submit" class="btn btn-primary" style="float: right;">Order Now</button>
+                            <button type="submit" class="btn btn-primary" style="float: right;">Xác nhận</button>
                         </div>
                     </section>
 
